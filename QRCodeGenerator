@@ -1,0 +1,5 @@
+import pyqrcode 
+from pyqrcode import QRCode
+s = input("Paste the link here:")
+url = pyqrcode.create(s)
+url.svg("GeneratedQR.svg",scale=10)
